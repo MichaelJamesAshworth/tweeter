@@ -1,12 +1,12 @@
 article.tweet {
-  border: 4px solid black;
+  border: 4px solid #416a59;
   padding: 15px;
   margin-top: 45px;
 }
 
 article.tweet:hover {
-  -webkit-box-shadow: 5px 5px 3px 2px #B3FF8C; 
-  box-shadow: 5px 5px 3px 2px #B3FF8C;
+  -webkit-box-shadow: 5px 5px 3px 2px #39395f; 
+  box-shadow: 5px 5px 3px 2px #39395f;
 }
 article.tweet header, article.tweet footer {
   padding: 0 5px;
@@ -14,13 +14,23 @@ article.tweet header, article.tweet footer {
 article.tweet header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+article.tweet header div.userGroup {
+  display: flex;
+  align-items: center;
+  
 }
 
 article.tweet p {
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #73a24e;
   padding: 10px;
 }
 
+.iconGroup {
+  color: #39395f;
+}
 .iconGroup i:hover {
-  color: goldenrod;
+  color: #a9c25d;
 }
