@@ -4,9 +4,7 @@ $(document).ready(function() {
     let remainingChars = 140;
     let textCounter = $('output.counter');
     let counter = remainingChars - textInput.length;
-    if (textInput.length >= 1) {
-      textCounter.text(counter);
-    }
+    textCounter.text(counter);
     if (counter < 0) {
       $('output.counter').css('color', 'red');
     }
