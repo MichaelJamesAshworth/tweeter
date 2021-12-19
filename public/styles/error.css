@@ -4,14 +4,14 @@
   justify-content: center;
   max-width: 50rem;
   border-radius: 25px;
-  border: 2px solid #D8000C;
+  border: 2px solid #d8000c;
   padding: 20px;
   margin: 10px auto;
-	padding: 15px 10px 15px 50px;
-	background-repeat: no-repeat;
-	background-position: 10px center;
-  color: #D8000C;
-	background-color: #FFBABA;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #d8000c;
+  background-color: #ffbaba;
 }
 
 .error-container img {

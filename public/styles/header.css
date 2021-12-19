@@ -1,6 +1,5 @@
 .pageHeader {
   height: 400px;
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   flex-grow: 1;

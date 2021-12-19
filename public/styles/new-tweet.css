@@ -14,17 +14,17 @@ footer {
   resize: none;
   border: none;
   border-bottom: 3px solid #416a59;
-  background-color:#f4f1ec;
+  background-color: #f4f1ec;
 }
 
 #tweetSubmitter {
   font-family: "Bungee", cursive;
   background-color: #39395f;
   color: #f4f1ec;
-  margin-top: .7em;
+  margin-top: 0.7em;
 }
 
 .counter {
   font-family: "Bungee", cursive;
-  margin-top: .7em;
+  margin-top: 0.7em;
 }

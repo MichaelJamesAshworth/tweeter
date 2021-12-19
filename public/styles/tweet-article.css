@@ -5,10 +5,11 @@ article.tweet {
 }
 
 article.tweet:hover {
-  -webkit-box-shadow: 5px 5px 3px 2px #39395f; 
+  -webkit-box-shadow: 5px 5px 3px 2px #39395f;
   box-shadow: 5px 5px 3px 2px #39395f;
 }
-article.tweet header, article.tweet footer {
+article.tweet header,
+article.tweet footer {
   padding: 0 5px;
 }
 article.tweet header {
@@ -20,7 +21,6 @@ article.tweet header {
 article.tweet header div.userGroup {
   display: flex;
   align-items: center;
-  
 }
 
 article.tweet p {
