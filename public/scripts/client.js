@@ -46,21 +46,28 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $(".error-container").hide();
   $("form").submit(function(event) {
     event.preventDefault();
     let serializedData = $(this).serialize();
     if ($("textarea#tweet-text").val().length > 140) {
-      alert("Ooops! It looks like you've entered too many characters.");
+      $(".error-text").text("Ooops! It looks like you've entered too many characters");
+      $(".error-container").slideDown("slow");
+      return;
     }
     if ($("textarea#tweet-text").val().length === 0) {
-      alert("It looks like you're tweet is empty!");
+      $(".error-text").text("It looks like your tweet is empty!");
+      $(".error-container").slideDown("slow");
+      return;
     }
     if ($("textarea#tweet-text").val() === null) {
-      alert("It looks like your tweet is empty!");
-    } else {
-      $.post("/tweets/", serializedData, function() {
-        loadTweets();
-      });
+      $(".error-text").text("It looks like your tweet is empty!");
+      $(".error-container").slideDown("slow");
+      return;
     }
+    $.post("/tweets/", serializedData, function() {
+      loadTweets();
+    });
   });
 });
+
