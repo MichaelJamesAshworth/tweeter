@@ -13,7 +13,9 @@ This repository is the starter code for the project: Students will fork and clon
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Screenshots
+# Desktop View
 !["Screenshot of tweeter app on a desktop screen](https://github.com/MichaelJamesAshworth/tweeter/blob/master/docs/tweeter-desktop-screen.png?raw=true)
+# Mobile View
 !["Screenshot of tweeter app on a mobile screen](https://github.com/MichaelJamesAshworth/tweeter/blob/master/docs/tweeter-mobile-screen.png?raw=true)
 ## Dependencies
 
