@@ -1,12 +1,14 @@
 .pageHeader {
   height: 400px;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   background-color: #416a59;
   background-image: url(../images/background-image-cubes.png);
-  color:#fff;
+  color: #fff;
 }
+
 

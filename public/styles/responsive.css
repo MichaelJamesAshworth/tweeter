@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1024px) {
+  #desktop-right-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 2rem;
+  }
+
+  .pageHeader {
+    margin: 4rem;
+    margin-top: 10rem;
+  }
+
+  main {
+    flex-grow: 2;
+  }
+};

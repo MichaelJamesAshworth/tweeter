@@ -2,10 +2,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100vw;
+  flex-grow: 1;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   color: #545149;
   background-color: #f4f1ec;
+  padding: 2rem;
 }
+
