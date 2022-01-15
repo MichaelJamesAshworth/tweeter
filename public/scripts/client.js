@@ -6,12 +6,17 @@ const escapeText = function (str) {
 //SHORTHAND VERSION OF .AJAX
 const loadTweets = function() {
   $.get("/tweets/", function($tweets) {
+    $("#tweet-text").val(null);
+    $("#tweet-text").attr("placeholder", 'What are you humming about?');
+    $("#outputID").text(140);
     renderTweets($tweets);
   });
 };
 
 //HELPER FUNCTION THAT CALLS createTweetElement() AND RENDERS IT TO THE WEBPAGE
+
 const renderTweets = function(tweets) {
+  $("#tweets-container").empty();
   for (const tweet of tweets) {
     let $tweet = createTweetElement(tweet);
     $("#tweets-container").prepend($tweet);
@@ -41,9 +46,7 @@ const createTweetElement = function(data) {
   return $tweet;
 };
 
-$(document).ready(function() {
-  loadTweets();
-});
+
 
 $(document).ready(function() {
   $(".error-container").hide();
