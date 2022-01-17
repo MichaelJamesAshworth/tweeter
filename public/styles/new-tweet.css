@@ -28,3 +28,7 @@ footer {
   font-family: "Bungee", cursive;
   margin-top: 0.7em;
 }
+
+.tweet p {
+  word-break: break-all;
+}

@@ -46,12 +46,10 @@ const createTweetElement = function(data) {
   return $tweet;
 };
 
-
-
 $(document).ready(function() {
+  loadTweets();
   $(".error-container").hide();
   $("form").submit(function(event) {
-    loadTweets();
     event.preventDefault();
     let serializedData = $(this).serialize();
     if ($("textarea#tweet-text").val().length > 140) {
