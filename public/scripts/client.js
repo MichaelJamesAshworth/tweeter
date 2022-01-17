@@ -51,6 +51,7 @@ const createTweetElement = function(data) {
 $(document).ready(function() {
   $(".error-container").hide();
   $("form").submit(function(event) {
+    loadTweets();
     event.preventDefault();
     let serializedData = $(this).serialize();
     if ($("textarea#tweet-text").val().length > 140) {
